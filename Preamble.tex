@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, amsthm} %AMS packages
+\usepackage{mathtools, graphicx, enumitem} %generally recommended
+\usepackage{mathrsfs} %symbols I like
+\usepackage{hyperref} %personal preference
+\usepackage{microtype, } %recommended by stackexchange, never tried them myself
+\usepackage{nag, todonotes} %workflow stuff, doesn't affect final document
+
+% Layout
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+
+
+%-------------------------------------------<commands>--------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Letter Symbols
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathcal{F}}
+\renewcommand{\H}{\mathcal{H}} %overwrites long-umlaut diacritic
+\newcommand{\eps}{\varepsilon}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Brackets
+\newcommand{\paren}[1]{\left( #1 \right)}
+\newcommand{\bracket}[1]{\left[ #1 \right]}
+\newcommand{\chevron}[1]{\langle #1 \rangle}
+\newcommand{\norm}[2][]{\left\lVert #2 \right\rVert_{#1}}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Operators
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\lspan}{span}
+\DeclareMathOperator{\conv}{conv} % stands for conv, as in convex hull
+\DeclareMathOperator{\Int}{int} % stands for int, as in interior of a set
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\sgn}{sgn}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Aarows
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+\newcommand{\weakly}{\rightharpoonup}
+\newcommand{\isom}{\cong}
+\newcommand{\restr}[1]{{\upharpoonright}_{#1}}
+%\newcommand{\rest}{\big|}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Common Abbreviations
+\renewcommand{\th}{^\mathrm{th}} %overwrites thorn (old english letter)
+\newcommand{\n}{^{-1}}
+\newcommand{\half}{\frac{1}{2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Differential Operators
+\newcommand{\del}{\partial}
+\newcommand{\grad}{\nabla}
+\newcommand{\Laplace}{\Delta}
+\renewcommand{\div}{\operatorname{div}} %overwrites division symbol
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\intd}{\,\dd}
+\newcommand{\ddt}{\frac{\dd}{\dd t}}
+\newcommand{\deriv}[2]{\frac{\dd #1}{\dd #2}} %can leave top blank, e.g. \deriv{}{x}
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}} %ditto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Favorite Functions and Space Names
+\newcommand{\test}{\mathcal{D}}
+\newcommand{\Ctest}{C_c^\infty}
+\newcommand{\BMO}{\operatorname{BMO}}
+\newcommand{\indic}[1]{\chi_{\{#1\}}}
+\newcommand{\Leb}[2][\R^n]{L^{#2}(#1)}
+
+
+
+
+\begin{document}
+
+\title{Full title}
+\author{Logan F. Stokols} 
+
+\maketitle
+
+
+
+
+\end{document}
