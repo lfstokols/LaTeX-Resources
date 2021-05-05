@@ -9,3 +9,5 @@ use \mathclap, \mathllap, \mathrlap to make TeX ignore a term (like a subscript)
 
 Use \text instead of \mathrm
 Use \int\displaylimits_a^b to put bounds above not next to
+
+For \norm, if you want a subscript use e.g. \norm[2]{u} for the L^2 norm of u, or \norm
