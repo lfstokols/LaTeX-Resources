@@ -47,7 +47,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Common Abbreviations
 \renewcommand{\th}{^\mathrm{th}} %overwrites thorn (old english letter)
 \newcommand{\n}{^{-1}}
-\newcommand{\half}{\frac{1}{2}}
+\newcommand{\half}[1][1]{\frac{#1}{2}} %\half gives 1/2, \half[n] gives n/2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Differential Operators
 \newcommand{\del}{\partial}
 \newcommand{\grad}{\nabla}
