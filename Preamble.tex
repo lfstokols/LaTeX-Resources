@@ -4,11 +4,12 @@
 \usepackage{mathrsfs} %symbols I like
 \usepackage{hyperref} %personal preference
 \usepackage{microtype, } %recommended by stackexchange, never tried them myself
-\usepackage{nag, todonotes} %workflow stuff, doesn't affect final document
+\usepackage{todonotes}%, nag} %workflow stuff, doesn't affect final document
 
 % Layout
 \usepackage{fancyhdr}
 \usepackage[margin=1in]{geometry}
+\mathtoolsset{showonlyrefs} % hides equation numbers if they are never referenced
 
 
 %-------------------------------------------<commands>--------------------------------------------------------
@@ -24,11 +25,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Brackets
 \newcommand{\paren}[1]{\left( #1 \right)}
 \newcommand{\bracket}[1]{\left[ #1 \right]}
-\newcommand{\chevron}[1]{\langle #1 \rangle}
+\newcommand{\chevron}[1]{\left\langle #1 \right\rangle}
 \newcommand{\norm}[2][]{\left\lVert #2 \right\rVert_{#1}}
 \newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\set}[2]{\left\{ #1 \, \middle| \, #2 \right\}}
+\newcommand{\inner}[2]{\chevron{#1, #2}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%											Operators
 \DeclareMathOperator{\supp}{supp}
 \DeclareMathOperator{\trace}{tr}
@@ -54,7 +57,7 @@
 \newcommand{\Laplace}{\Delta}
 \renewcommand{\div}{\operatorname{div}} %overwrites division symbol
 \newcommand{\dd}{\mathrm{d}}
-\newcommand{\intd}{\,\dd}
+\newcommand{\id}{\mathop{}\!\dd}
 \newcommand{\ddt}{\frac{\dd}{\dd t}}
 \newcommand{\deriv}[2]{\frac{\dd #1}{\dd #2}} %can leave top blank, e.g. \deriv{}{x}
 \newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}} %ditto
